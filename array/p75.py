@@ -7,7 +7,7 @@ class Solution:
         a = 0
         b = len(nums)-1
         
-        while i < b:
+        while i <= b:
             if nums[i] == 0:
                 nums[i], nums[a] = nums[a], nums[i]
                 a += 1
