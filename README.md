@@ -27,16 +27,18 @@
 
 - leetcode p3 Longest Substring without Repeating Characters
 
-# Sorting
+# Sort
 
-## Bubble Sorting (버블정렬)
+## Bubble Sort (버블정렬)
   > stable
 
-## Insertion Sorting (삽입정렬)
+## Insertion Sort (삽입정렬)
   > stable
 
-## Selection Sorting (선택정렬)
+## Selection Sort (선택정렬)
   > unstable
+
+## Merge Sort
 
 # Stack
 # Hashmap
