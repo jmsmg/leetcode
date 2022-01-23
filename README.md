@@ -1,4 +1,11 @@
 # Arrays
+
+## Binary Search
+
+- [leetcode p704 Binary Search](array/p704.py)
+
+- [leetcode p724 Index](array/p724.py)
+
 # String
 > String Matching problem은 O(n)의 time complex를 갖는다
 
