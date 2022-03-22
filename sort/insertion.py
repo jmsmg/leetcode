@@ -8,13 +8,13 @@ def binary_search(answer:list, pop_number:int) -> list:
     L = 0
     R = len(answer) - 1
     
-    while L >= R:
+    while L <= R:
         pivot = L + R // 2
-        
+
         if answer[pivot] < pop_number:
             L = pivot+1
         elif answer[pivot] > pop_number:
-            R = pivot
+            R = pivot-1
     
     return answer.insert(R+1, pop_number)
     
@@ -24,8 +24,9 @@ if unsorted != []:
     answer = [unsorted.pop(0)]
     
     for i in range(len(unsorted)):
+
         pop_number = unsorted.pop(0)
-        
+
         binary_search(answer, pop_number)
 else:
     answer = -1
