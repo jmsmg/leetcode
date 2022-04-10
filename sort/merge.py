@@ -1,31 +1,20 @@
-def ft_recur_merge(array:list) -> list:
+import sys
 
+def ft_merge_sort(array:list) -> list:
+    
     if len(array) < 2:
         return array
-
-    mid = len(array) // 2
-
-    left_sorted = ft_recur_merge(array[:mid])
-    right_sorted = ft_recur_merge(array[mid:])
     
-    merged_array = []
+    pivot = len(array) // 2
     
-    left_idx = 0
-    right_idx = 0
-    
-    while left_idx < len(left_sorted) and right_idx < len(right_sorted):
-        if left_sorted[left_idx] <= right_sorted[right_idx]:
-            merged_array.append(left_sorted[left_idx])
-            left_idx += 1
-        else:
-            merged_array.append(right_sorted[right_idx])
-            right_idx += 1
+    left_array = ft_merge_sort(array[:pivot])
+    right_array = ft_merge_sort(array[pivot:])
 
-    merged_array += left_sorted[left_idx:]
-    merged_array += right_sorted[right_idx:]
+    l = 0
+    r = 0
 
-    return merged_array
+    while l 
 
-array = list(map(int, input().split()))
+array = list(map(int, sys.stdin.readline().split())
 
-print(ft_recur_merge(array))
+print(array)
